@@ -6,7 +6,7 @@ from youtube_search import search_youtube
 
 app = Flask(__name__)
 
-@app.route("/youtube_trend_links", methods=["GET"])
+@app.route("/youtube_trend_links", methods=["POST"])
 def youtube_summary_get():
     topic = request.args.get("topic")
     limit = int(request.args.get("limit", 5))
