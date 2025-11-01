@@ -1,9 +1,6 @@
 from flask import Flask, request, jsonify
 from youtube_search import search_youtube
 
-
-
-
 app = Flask(__name__)
 
 @app.route("/youtube_trend_links", methods=["POST"])
